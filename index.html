@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="cache-control" content="no-cache">
+    <link rel="icon" href="./pics/"/>
+    <title>School Of Computing & Information Technology</title>
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/index.css"/>
+
+    <!-- SweetAlert -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/sweetalert.css"> -->
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="fontawesome-5.0.12/web-fonts-with-css/css/fontawesome-all.min.css"/>
+
+</head>
+
+<body>
+
+
+<!-- SLIDER -->
+<!-- <div class="slider fullscreen" id="home">
+    <ul class="slides">
+        <li>
+            <img src="./pics/evans-barasa-foundation-activities.jpg">
+            <div class="caption center-align" id="first">
+                <img class="caption-img" src="./pics/full-logo-whiteout.png"/>
+            </div>
+        </li>
+
+        <li>
+            <img src="pics/tree-planting.jpg">
+            <div class="caption center-align" id="second">
+                <h3>Community Empowerment</h3>
+                <h5 class="light grey-text text-lighten-3">We empower people to solve their community's social economic problems</h5>
+                <a class="btn waves-effect modal-trigger" href="#partner">Partner With Us</a>
+            </div>
+        </li>
+
+        <li>
+            <img src="pics/evans-barasa-foundation-education.jpg">
+            <div class="caption center-align" id="third">
+                <h3>Supporting Education</h3>
+                <h5 class="light grey-text text-lighten-3">We help students achieve their educational goals</h5>
+                <a class="btn waves-effect modal-trigger" href="#partner">Partner With Us</a>
+            </div>
+        </li>
+
+    </ul>
+</div> -->
+
+
+<div class="slider fullscreen">
+    <ul class="slides">
+        <li>
+            <img src= "./pics/graduates.jpeg">
+            <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img src="./pics/facilities.jpeg">
+            <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+        <li>
+            <img src="./pics/classroom.jpeg">
+            <div class="caption right-align">
+                <h3>Right Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- END OF SLIDER -->
+
+
+<!--NAVIGATION-->
+<nav class="bfr-scrolled">
+    <div class="nav-wrapper">
+        <a href="#home" class="brand-logo">
+            <img id="nav-logo" src="./pics/full-logo.png" alt="Evans Barasa Foundation"/>
+            <img id="nav-logo-aft" src="./pics/full-logo-whiteout.png" alt="Evans Barasa Foundation"/>
+        </a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="fas fa-bars"></i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#initiatives">Our Initiatives</a></li>
+            <li><a href="#gallery">Project Gallery</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#leadership">Leadership</a></li>
+            <li><a href="#initiatives">Our Initiatives</a></li>
+            <li><a href="#gallery">Project Gallery</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+<!--END OF NAVIGATION-->
+
+
+
+<!-- CONTACT US -->
+<div id="contactus">
+    <h1 class="section-title">Contact Us</h1>
+    <div class="row contact-row">
+
+        <form class="col l12 m12 s12" method="POST" action="inc/send-mail.php">
+
+            <div class="row">
+                <div class="input-field col l6 m6 s12">
+                    <input id="name" name="name" type="text" class="validate" required>
+                    <label for="name">Name</label>
+                </div>
+
+                <div class="input-field col l6 m6 s12">
+                    <input id="email" name="email" type="email" class="validate" required>
+                    <label for="email">E-mail Address</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col l12 m12 s12">
+                    <input id="subject" name="subject" type="text" class="validate" required>
+                    <label for="subject">Subject</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col l12 m12 s12">
+                    <textarea id="message" name="message" class="materialize-textarea"></textarea>
+                    <label for="message">Message</label>
+                </div>
+            </div>
+
+            <div class="row form-final">
+                <div class="col l6 m12 s12"><br/></div>
+                <div class="input-field col l12 m12 s12 submitbtn">
+                    <input type="submit" name="send" id="send" class="btn" value="SEND"/>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+<!-- END OF CONTACT US -->
+
+
+<!-- FOOTER -->
+<footer class="page-footer">
+    <div id="top">
+        <div class="row">
+
+            <div class="col l4 s12">
+                <img class="sitename" src="./pics/full-logo-whiteout.png" alt="" />
+                <p class="">Evans Barasa Foundation is a platform through which young people from the poorest areas in Kenya achieve a stronger socioeconomic position in the society.</p>
+            </div>
+
+            <div class="col l6 s12">
+                <h5 class="sectiontitle">Reach Us</h5>
+                <p><i class="fas fa-envelope-open"></i>P.O Box 52213 - 00100 GPO, Nairobi, Kenya</p>
+                <p><i class="fas fa-map-marker-alt"></i>Kibiku Suite, Next to St. Luke PCEA, Utawala, off Eastern Bypass</p>
+                <p><i class="fas fa-envelope"></i>info@evansbarasafoundation.org / support@evansbarasafoundation.org</p>
+                <p><i class="fas fa-phone"></i>+254 728 881 014 / +254 202 300 391</p>
+                <p><i class="fab fa-whatsapp"></i>+254 728 881 014</p>
+            </div>
+
+            <div class="col l2 s12">
+                <h5 class="">Social Media</h5>
+                <ul class="social">
+                    <li><a target="_blank" href="https://web.facebook.com/evansbarasa.foundation?_rdc=1&_rdr"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/evans-barasa-foundation-5b871b163/"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a target="_blank" href="https://plus.google.com/"><i class="fab fa-google-plus-g"></i></a></li>
+                </ul>
+                <h5 class="">Links</h5>
+                <ul class="links">
+                    <li><a class="" href="#home">Home</a></li>
+                    <li><a class="" href="#about">About</a></li>
+                    <li><a class="" href="#leadership">Leadership</a></li>
+                    <li><a class="" href="#initiatives">Our Initiatives</a></li>
+                    <li><a class="" href="#gallery">Project Gallery</a></li>
+                    <li><a class="" href="#contactus">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-copyright row">
+        <div class="container">
+            <div class="col l6 s12">
+                <div id="down1">
+                </div>
+            </div>
+
+            <div class="col l12 s12">
+                <div id="down3">
+                    <p style="text-align:center;font-size: 0.8rem;">Powered by
+                        </small><a href="http://www.compwiz.co.ke/" target="_blank"><span style="color:#ff6600;">Compwiz</span> <span style="color:#009900;">Creations</span></a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- END OF FOOTER -->
+
+
+<!-- ================================================== -->
+<!--javascript files-->
+<!-- Materialize JavaScript -->
+<script src="js/jquery-3.2.1.min.js"></script>
+
+<!-- Materialize JS -->
+<script src="materialize/js/materialize.min.js"></script>
+
+<!-- Animate On Scroll JavaScript -->
+<!-- <script src="js/Animate-On-Scroll/aos.js"></script> -->
+
+<!-- jQuery Easing -->
+<script src="js/jquery-easing-1.3.min.js"></script>
+
+<!-- SweetAlert JavaScript -->
+<!-- <script src="js/sweetalert.min.js"></script> -->
+
+<!-- <script src="js/jquery-1.11.0.min.js"></script> -->
+<!-- <script src="js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script> -->
+<script src="js/index.js"></script>
+
+</body>
+</html>
